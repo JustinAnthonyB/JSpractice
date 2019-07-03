@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Practice</title>
+    <meta name="description" content="wk4 JS">
+    <meta name="author" content="Justin Anthony">
+
+
+</head>
+
+<body>
+    <script>
+	console.log("peepee");
+    console.error("pooh");
+    console.warn("kaka");
+    console.info("vex");
+    console.debug("pvex");
+
+    console.time("Timely");    
+    let input = prompt("GIVE ME THE GOODS!!!!");
+    document.write(`<br/>`);
+    document.write(input);
+    console.timeEnd("Timely");
+
+    let pp1 = "123";
+    let pp2 = "321";
+    console.assert(pp1 < pp2,"2");
+    console.assert(pp1 > pp2,"1");
+
+    let num1 = 10;
+    let num2 = 11;
+    document.write(num1 + num2);
+    document.write(num1 * num2);
+    document.write(num1 - num2);
+    document.write(num1 / num2);
+    document.write(num1 + num2);
+    document.write(num1 + num2);
+    document.write(num1 % num2);
+    document.write(num1++); //124
+    document.write(num1--);
+    document.write(++num1); //125
+    document.write(--num2);
+
+    let t1 = 1;
+    let t2 = 2;
+    let t3 = 3;
+    t1 = t1 * (t2+t3);
+    t2 = t2 % (t1 - t3);
+    t3 = t3 - t1;
+
+    let task6 = prompt("GIVE ME A NUMBER!");
+    if (task6 == isNaN){
+        document.write(task6, " is not a number... FOOL");
+    }
+    else{
+    document.write(task6, " is a number... FOOL");
+    }
+    let task7 = 22;
+    let task72 = prompt("GIVE ME A NUMBER...AGAIN!");
+    if (task7 == task72){
+        document.write("They are equal");
+    }
+    else{
+        document.write("They are not equal");
+    }
+
+    //task 8
+    if ("\n" = false) {
+        document.write("1st is true");
+    else
+    document.write("1st is false");
+    }
+    if ("" = 0) {
+        document.write("2nd is true");
+    else
+    document.write("2nd is false");
+    }
+    if (undefined = null) {
+        document.write("2nd is true");
+    else
+    document.write("3rd is false");
+    }
+    if ("Infinity" = Infinity) {
+        document.write("4th is true");
+    else
+    document.write("4th is false");
+    }
+    if (true = "true") {
+        document.write("5th is true");
+    else
+    document.write("5th is false");
+    }
+
+
+
+task9 = "a";
+task92 = 32;
+
+    if (task9 == task92){
+        document.write(task9, "and", task 92, "are equal");
+    }
+    if (task9 = task92){
+        document.write(task9, "and", task 92, "are identical");
+    }
+task10 = prompt("NUMBER NUMBER NUMBER!!!!");
+    if (task10 > 0){
+        document.write("Postive");
+    }
+    else if (task10 < 0){
+        document.write("Negative");
+    }
+    else if (task10 = 0){
+        document.write("Neutral");
+    }
+    else if (task10 = isNaN){
+        document.write("NaN");
+    }
+
+let task11 = prompt("ONE NUMBER BOY!!!!");
+    if (task11 < 9 && task11 == "a" ||"e" ||"i" ||"u"||"o")
+    {
+        document.write("It's a vowel");
+    }
+    else {
+        document.write("it's not a vowel");
+    }
+    
+
+ let task12 = prompt("first number");
+ let task122 = prompt("second number");
+
+if (task12 > task122) {
+    document.write = (task12, "is higher");
+}
+else {
+    document.write = (task122, "is higher");
+}
+    </script>
+	<script src=https://my.gblearn.com/js/loadscript.js></script>
+</body>
+</html>
+
+<!-- //Task 9
+//Create a string variable with a numerical value
+//Create a number variable with a numerical value
+//
+//Determine if the two variables are identical
+//Determine if the two variables are equal -->
+
+<!--
+Task 10
+
+Ask the user for a number
+
+Determine if the number is positive, negative, neutral or not a valid number
+
+Task 11
+Ask the user for a single character
+
+Determine if the user input is a vowel. If so, output with vowel they inserted.
+
+Task 12
+
+Ask the user for two inputs
+Determine with input has the greater value
+
+Task 8
+Determine if "\n" is equal to false
+Determine if "" is equal to 0
+Determine if undefined is equal to null
+Determine if Infinity is equal to "Infinity"
+Determine if true is equal to "true"
+
+Output a boolean result for each determination
+
+Task 7
+Create a variable that stores a numerical value
+Ask the user for a number
+Determine if the user input is equal to your variable. 
+Determine if the user input is identical to your input.
+
+ Task 6
+
+Ask the user for a number
+Determine if the input is a valid number
+Output a boolean result
+
+
+Task 5
+Create 3 variables with number data types
+Update the first variable by the product its current value with 
+the sum the second and third variable
+Update the second variable by the quotient its current value with the difference 
+the first and third variable
+Update the third variable by the difference its current value with the first variable   
+Task 4
+Create 2 variables with number data types
+Output the sum, product, quotient and difference of the two numbers
+Output the modulus of the first number by the second number
+Output the value of the postfix increment operator (++ after the variable)
+Output the value of the postfix decrement operator (-- after the variable)
+Output the value of the prefix increment operator (++ before the variable)
+Output the value of the prefix decrement operator (-- before the variable)
+Task 2
+
+Start a console timer
+Name the timer anything you'd like
+Ask the user for information
+output the user input to screen
+Stop the console timer
+Open the console to determine the execution timer
+Output a message to the console using the following methods
+ Task 1
+log
+error
+warn
+info
+debug
+
+(5 message total)
+
+
+Task 3
+Create a variable with the numerical value of 1
+Create a variable with the numerical value of 3
+using console.assert() determine if the first variable is less than the second variable
+using console.assert() determine if the first variable is greater than the second variable
+
+
+
+
+
+
+
+
+Output a boolean result for each determination
+
+
+
+
+Task 10
+
+Ask the user for a number
+
+Determine if the number is positive, negative, neutral or not a valid number
+
+Task 11
+Ask the user for a single character
+
+Determine if the user input is a vowel. If so, output with vowel they inserted.
+
+Task 12
+
+Ask the user for two inputs
+Determine with input has the greater value 

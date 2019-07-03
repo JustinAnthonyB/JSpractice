@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Practice</title>
+    <meta name="description" content="wk5 JS">
+    <meta name="author" content="Justin Anthony">
+
+
+</head>
+
+<body>
+    <script>
+//    Task 1
+// Using a for loop
+// Count up from 0 to 300 by 15s 
+for (i=0; i<=300; i = i + 15)
+{
+document.write(i);
+document.write("<br>");
+}
+
+// Task 2
+// Using a while loop
+// Count down from 500 to 0 by 25s
+j=500; 
+while (j>=0)
+{
+document.write(j);
+document.write("<br>");
+j -= 25; //j=j-25;
+}
+// Task 3
+// Using any loop
+// Count from 2 to 256 by powers of two
+// 2 4 8 16 32 64 128 256
+for (k=2; k<=256; k = k * 2)
+{
+document.write(k);
+document.write("<br>");
+}
+// Task 4
+// Complete Task 3 but using another loop structure
+l=2; 
+while (l <=256)
+{
+document.write(l);
+document.write("<br>");
+l = l * 2;
+}
+
+// Task 5
+// Ask the user for a car brand (Nissan, Toyota, etc)
+// Using switch statements,
+// Code 3 cases that represent any car brand of your choosing
+// Inform the user you have that car brand in your dealership
+// Code the default case stating you don't have that brand in your dealership
+
+
+let input = prompt("THIS IS A CARJACK!!! TELL ME YOUR CAR BRAND!!!");
+
+switch (input)
+{
+case ("Nissan" || "Toyota" || "Penmobile"):
+  document.write(`I LIKE ${input} CARS!!! MOVE OVER!!!`)
+  break;  
+default:
+    document.write(`Beat it deadbeat. ${input} cars suck!`)
+  break;
+}
+// Task 6  -THIS ONE IS ANNOYING!!!!
+// Ask the user for a year
+// Output to the user if the year is a leap year by following the algorithm below
+
+// To determine whether a year is a leap year, follow these steps: 
+// 1)If the year is evenly divisible by 4, go to step 2. Otherwise, go to step 5.
+// 2)If the year is evenly divisible by 100, go to step 3. Otherwise, go to step 4.
+// 3)If the year is evenly divisible by 400, go to step 4. Otherwise, go to step 5.
+// 4)The year is a leap year (it has 366 days).
+// 5)The year is not a leap year (it has 365 days).
+
+//Task 7
+// Complete this task using a do-while loop
+// Continually ask the user for a positive number
+// When the user has inputted a positive number
+// escape the loop
+// output to screen the positive number
+m = 0
+do
+{
+    var input1 = prompt("HEY DUMMY!!! GIVE ME A POSITIVE NUMBER... OR ELSE");
+
+m++
+}
+while (input1 < 0)
+document.write("<br>");
+document.write(`FINALLY! ${input1} is positive`)
+
+// Task 8
+// Complete task 7 using a while loop
+n=-1; 
+while (n<0)
+{
+    var n = prompt("HEY DUMMY!!! GIVE ME A POSITIVE NUMBER... OR ELSE");
+}
+document.write("<br>");
+document.write(`FINALLY! ${n} is positive`);
+
+// Task 9
+// Complete Task 7 using a for loop
+
+for (o=-1; o<0;)
+{
+    var o = prompt("HEY DUMMY!!! GIVE ME A POSITIVE NUMBER... OR ELSE");
+}
+document.write("<br>");
+document.write(`FINALLY! ${o} is positive`);
+
+// Task 10
+// Continually ask the user for a number until they have inputted 
+// a value between the range of 50-75
+// Escape the loop and display a congrats message
+
+
+while(true){
+    let input5 = prompt("NUMBER NOW!!!");
+    let num = parseFloat(input5)
+    if(num >=50 && num <= 75){
+        alert("Right")
+        break;
+    }
+    else {
+        alert("wrong")
+    }
+}
+
+// Task 11
+// Count up from 1-20 
+// Skip the numbers 6 and 13
+// && q != 6 && q !=13
+for (let q=0; q<=20; q++)
+{
+    if (q===6 || q===13 )
+continue;
+document.write(q);
+document.write("<br>");
+
+
+}
+
+
+u=60; 
+while (u>=12)
+{
+document.write(u);
+document.write("<br>");
+u -= 3; //j=j-25;
+}
+
+    </script>
+	<script src=https://my.gblearn.com/js/loadscript.js></script>
+</body>
+</html>
+<!-- 
+Task 12
+Count down from 60 to 12 by 3s
+Skip the odd numbers -->
