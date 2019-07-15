@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Practice - Numbers</title>
+    <meta name="description" content="Basic JS Control Statement">
+    <meta name="author" content="Justin Anthony">
+
+</head>
+<body>
+  
+  <script>
+   
+//    Task 1
+// Create a named function that takes two arguments and returns 
+// the argument with the greatest length
+// The function ensures that both arguments are string data type
+// If not, it returns false
+
+function tsk1(a,b) {
+    // b = (typeof b !== 'undefined') ?  prompt("error");
+    // a = (typeof a !== 'undefined') ?  prompt("error");
+    let result = a>b ? a : b;
+    return result;
+    
+}
+// Task 2
+// Create a named function that takes an unlimited amount of arguments
+// It outputs the arguments to screen, separated by a breaking rule html tag
+
+// function tsk2(){
+//     for (i = 0; i < arguments.length; i++){
+//     // result = tsk2[i]
+//     result = tsk2[i]
+//     document.write = ("</br>")
+//     }
+//     return result;
+// }
+function manyArgs() {
+  for (var i = 0; i < arguments.length; ++i)
+    document.write(arguments[i],"</br>");
+  
+}
+// Task 3
+// Create an anonymous function that takes 2 parameters: a string and an integer
+// The functions returns a boolean value of whether the string length is equal to the integer value
+
+function tsk3(a,b) {
+    let str = isNaN(a);
+    //can't get it to pass a string
+    let int = parseInt(b)
+    if (a.length = b.length) {
+      return true
+    }
+    else {return false}
+
+
+    // var letters = /^[A-Za-z]+$/;
+    // if (a = parseInt);
+    // if(b.value.match(letters)){
+    //     if (a.length = b.length){
+    //         return true;
+    //     }
+    //     else { return false;}
+    // }
+     
+}
+// Task 4
+// Create an anonymous function that takes two optional arguments
+// The function returns the product of the two parameters
+// Pass any number default value for the arguments
+
+var res4 = function (a,b) {
+let c = a+b;
+return c; 
+}
+// Task 5
+
+// Create a named function that
+// takes 1 argument
+// outputs that argument to screen
+// Then outputs a breaking line HTML tag
+function tsk5(a){
+  document.write(a);
+  document.write("</br>");
+}
+// Task 6
+// Create a named function that
+// takes 2 arguments
+// first argument is an HTML Tag
+// second argument is text
+// outputs the text surrounded by the
+// opening html tag and closing html tag
+
+// E.G FUNC('p',"hello world")
+// produces
+// "<p>hello world</p>"
+
+function tsk6 (a,b){
+  let res6 = (`"<${a}>" + ${b} + "</${a}>" `)
+}
+
+
+
+// Task 7
+// Create a named function that
+// takes 2 arguments
+// it determines if BOTH arguments are NUMBERS
+// If so
+// It RETURNS the sum
+// If not
+// it RETURNS false
+function tsk7 (a,b){
+  if (a && b != isNaN){
+    return (a + b);
+  }
+  else {
+    return false;
+  }
+}
+
+// Task 8
+// Create an anonymous function that 
+// takes 2 arguments 
+// it determines which argument has the greater length
+// It returns the argument that has the longer length
+
+let tsk8 = function (a,b){
+  if (a.length > b.length){
+    return a;
+  }
+  else{
+    return b;
+  }
+}
+
+
+// Task 9
+// Create an anonymous function that 
+// takes an unlimited amount of arguments 
+// it determines which argument has the greater length
+// It returns the argument that has the longer length
+
+let tsk9 = function (){
+  for (var i = 0; i < arguments.length; ++i)
+  {}//??
+}
+
+ 
+
+
+// Task 10
+// Create an anonymous function that
+// takes 2 arguments
+// divides the arguments by each other
+// returns the result
+
+let tsk10 = function (a,b) {
+let c = a/b;
+return c; 
+}
+
+  </script>
+ 
+  
+</body>
+</html>
