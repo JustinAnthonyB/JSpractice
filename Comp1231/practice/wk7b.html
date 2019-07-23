@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>JS Practice - Numbers</title>
+    <meta name="description" content="Basic JS Control Statement">
+    <meta name="author" content="Justin Anthony">
+
+  </head>
+
+  <body>
+
+    <script>
+      //    Task 1
+      // Create a named function that takes two arguments and returns 
+      // the argument with the greatest length
+      // The function ensures that both arguments are string data type
+      // If not, it returns false
+
+      // function tsk1(a,b) {
+
+      //     if (typeof(a) === "string" && typeof(b) === "string"){
+      //     // b = (typeof b !== 'undefined') ?  prompt("error");
+      //     // a = (typeof a !== 'undefined') ?  prompt("error");
+      //     let result = a>b ? a : b;
+      //     }
+      //     return result;
+
+      // }
+
+      function tsk1(first, second) {
+
+        // if(typeof(first) === "number" &&
+        //     typeof(second) === "number"){
+
+        //     //return Math.max(first, second);
+
+        //     if(first > second)
+        //         return first;
+        //     return second
+        // }
+        // else 
+        if (typeof(first) === "string" &&
+          typeof(second) === "string") {
+
+          return Math.max(first.length,
+            second.length);
+        }
+
+        return false;
+      }
+
+      // Task 2
+      // Create a named function that takes an unlimited amount of arguments
+      // It outputs the arguments to screen, separated by a breaking rule html tag
+
+      // function tsk2(){
+      //     for (i = 0; i < arguments.length; i++){
+      //     // result = tsk2[i]
+      //     result = tsk2[i]
+      //     document.write = ("</br>")
+      //     }
+      //     return result;
+      // }
+      function tsk2() {
+        //working
+        for (var i = 0; i < arguments.length; ++i)
+          document.write(arguments[i], "</br>");
+
+      }
+      // Task 3
+      // Create an anonymous function that takes 2 parameters: a string and an integer
+      // The functions returns a boolean value of whether the string length is equal to the integer value
+
+      let tsk3 = function(a, b) {
+        if (typeof(a) === "string" && typeof(b) === "number") {
+
+          //working
+          if (a.length == b) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+
+      }
+
+
+
+
+      // Task 4
+      // Create an anonymous function that takes two optional arguments
+      // The function returns the product of the two parameters
+      // Pass any number default value for the arguments
+      let tsk4 = function(a = 1, b = 1) {
+        //working
+        return a * b; {
+
+        }
+      }
+      // Task 5
+
+      // Create a named function that
+      // takes 1 argument
+      // outputs that argument to screen
+      // Then outputs a breaking line HTML tag
+
+      function tsk5(a) {
+        //working
+        document.write(a + "</br>");
+      }
+
+
+
+      // Task 6
+      // Create a named function that
+      // takes 2 arguments
+      // first argument is an HTML Tag
+      // second argument is text
+      // outputs the text surrounded by the
+      // opening html tag and closing html tag
+
+      // E.G FUNC('p',"hello world")
+      // produces
+      // "<p>hello world</p>"
+
+      function tsk6(a, b) {
+        //working
+        return "<" + a + ">" + b + "</" + a + ">";
+      }
+
+      // Task 7
+      // Create a named function that
+      // takes 2 arguments
+      // it determines if BOTH arguments are NUMBERS
+      // If so
+      // It RETURNS the sum
+      // If not
+      // it RETURNS false
+
+      function tsk7(a, b) {
+        //working
+        if (typeof(a) === "number" && typeof(b) === "number") {
+          return a + b;
+        } else {
+          return false
+        }
+      }
+
+
+
+      // Task 8
+      // Create an anonymous function that 
+      // takes 2 arguments 
+      // it determines which argument has the greater length
+      // It returns the argument that has the longer length
+
+      function tsk8(a, b) {
+        //working
+        if (a.length > b.length)
+          return a;
+        return b;
+
+      }
+
+      // Task 9
+      // Create an anonymous function that 
+      // takes an unlimited amount of arguments 
+      // it determines which argument has the greater length
+      // It returns the argument that has the longer length
+
+      var tsk9 = function() {
+        //working
+        let max = arguments[0]
+        for (let i = 0; i < arguments.length; i++) {
+          if (max.length < arguments[i].length) {
+            max = arguments[i];
+          }
+        }
+        return max;
+      }
+
+
+      // Task 10
+      // Create an anonymous function that
+      // takes 2 arguments
+      // divides the arguments by each other
+      // returns the result
+
+      var tsk10 = function(a, b) {
+        //working
+        return a / b;
+
+      }
+
+
+
+
+      // function add(){
+      //     let sum = 0;
+      //     for(let i = 0; i < arguments.length; i++){
+      //         sum += arguments[i];
+      //     }
+      //     return sum
+      // }
+
+    </script>
+
+
+  </body>
+
+</html>
