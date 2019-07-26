@@ -1,0 +1,128 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Practice - Numbers</title>
+    <meta name="description" content="wk2 JS">
+    <meta name="author" content="Justin Anthony">
+
+</head>
+<body>
+
+
+  <script>
+  
+  
+//   Task 1
+
+// Create an object named bag
+// Give the object 3 properties
+// 2 properties adhere to JS naming conventions
+// 1 property does not adhere to JS naming conventions
+// Give the object 2 methods
+// 1 method adheres to JS naming conventions
+// it takes 1 parameter
+// 1 method does not adhere to JS naming conventions
+// it takes 2 parameters
+
+
+  
+    var tsk1={
+
+property1: "first value",
+
+property2:"num_value",
+
+property3: "1apple",
+
+meth1: function(arg1){
+  return true
+},
+
+meth2: function(arga,argb){
+  return false
+}
+      
+    };
+    
+// Task 2
+
+// Output the value of 1 property using array syntax
+// Output the value of 1 property using object syntax
+
+// Update the value of 1 property using array syntax
+// Update the value of 1 property using object syntax
+
+var tsk2= new Object()
+tsk2.prp1 = "prp1";
+tsk2["prp2"] = "prp2";
+
+document.write(tsk2.prp1);
+document.write(tsk2.prp2);
+
+tsk2.prp1 = "new1";
+tsk2["prp2"] = "new2";
+
+console.log(tsk2.prp1);
+console.log(tsk2.prp2);
+
+
+
+// Task 3
+
+// Remove 1 property of the object
+
+delete tsk2.prp1
+
+// Output the value of 1 method using array syntax
+
+document.write(tsk1["meth1"](1))
+// Output the value of 1 method using object syntax
+document.write(tsk1.meth2(1,2))
+
+// Task 4
+// Ask the user for a string
+// Determine if the input is longer than 7 characters
+// If YES
+// Using the substr method, output the 3rd, 4th and 5th characters. Assume the string will
+// If NOT
+// Output an error to the console
+
+// Task 5
+// Create a variable that contains a word at least 5 characters long
+// Using the split method
+// create an array that stores all the characters of the string as an index
+// create an array that splits the string by any vowel
+
+// Task 6
+// Create an array of 5 elements
+// output a string value that concatenates all 5 elements of the array by any delimiter (such as space, dash)
+
+// Task 7
+// Create an array variable with 5 elements
+// Ensure there is at least 1 number data type
+// Ensure there is at least 1 string data type
+// Do not have a boolean data type as an element
+// Ask the user for a value
+// Using a loop, determine if the value is in the array. Output to screen a "found" or "not found" message
+// Do not use an array method
+
+// Task 8
+// Create a variable that stores a random number between 1-10
+// Math.floor((Math.random() * 10) + 1);
+// Create an array variable with empty values
+// Create a variable that will store the latest index of the array
+
+// In an indeterminate loop, ask the user to guess the number
+// If the user guesses the number correctly, escape the loop and give a congrats message
+// If the user not not guess the number, add the incorrect guess to the array using the latest index variable. Ensure you update this variable by increasing its value by 1
+// Output the number of incorrect guesses
+// Output the values of the incorrect guesses
+    
+  </script>
+
+  
+</body>
